@@ -1,0 +1,43 @@
+header{
+    border: 2px solid limegreen;
+    padding: 10px;
+    margin: 50px;
+    color: peru;
+}
+
+li{
+    display: inline;
+}
+
+div{
+
+    width: 40%;
+}
+
+.practice{
+    border: 2px solid limegreen;
+    padding: 10px;
+    margin: 50px;
+}
+
+footer{
+    clear: left;
+}
+
+.t{
+    float: left;
+}
+
+.x{
+    position: relative;
+}
+.p{
+    border: 2px solid black;
+    position: absolute;
+    left:0px;
+}
+.m{
+    position: fixed;
+    top: 20px;
+    left: 0px;
+}

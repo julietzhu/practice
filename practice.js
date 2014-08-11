@@ -9,7 +9,7 @@ function Exchange(){
     //1美元兑换  1美元=100美分
     var one_cent=0, five_cents=0, ten_cents=0, twenty_five_cents=0, fifty_cents=0;
     var total=0;
-    var couter = 0;
+    var counter = 0;
     for(one_cent=0;one_cent<=100;one_cent=one_cent+5)
     {
         for(five_cents=0;five_cents<=20;five_cents++)
@@ -32,7 +32,7 @@ function Exchange(){
                     }
                     for(fifty_cents=0;fifty_cents<=2;fifty_cents++)
                     {
-                        couter++;
+                        counter++;
                         if(one_cent+five_cents*5+ten_cents*10+twenty_five_cents*25+fifty_cents*50>100)
                         {
                             break;
@@ -46,7 +46,7 @@ function Exchange(){
             }
         }
     }
-    console.log("couter="+couter+"total="+total);
+    console.log("counter="+counter+"total="+total);
 }
 
 //递归练习
@@ -79,4 +79,4 @@ function hanoi_tower(disk,first,second,third){
     }
     return counter;
 }
-console.log("共移动"+hanoi_tower(2,"A","B","C")+"次");
+console.log("共移动"+hanoi_tower(3,"A","B","C")+"次");
