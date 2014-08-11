@@ -64,18 +64,18 @@ function factorial(number) {
 }
 //console.log(factorial(5));
 
-//汉诺塔
-function hanoi_tower(disk,from,mid,to){
+//汉诺塔  其中first,second,third分别表示第一根,第二根,第三根柱子
+function hanoi_tower(disk,first,second,third){
     var counter=0;
     if(disk==1){
         counter=1;
-        console.log("disk "+disk+" from "+from+ " to "+to);
+        console.log("disk "+disk+" from "+first+ " to "+third);
     }
     else{
-        counter=counter+hanoi_tower(disk-1,from,to,mid);
+        counter=counter+hanoi_tower(disk-1,first,third,second);
         counter++;
-        console.log("disk "+disk+" from "+from+ " to "+to);
-        counter = counter+hanoi_tower(disk-1,mid,from,to);
+        console.log("disk "+disk+" from "+first+ " to "+third);
+        counter = counter+hanoi_tower(disk-1,second,first,third);
     }
     return counter;
 }
